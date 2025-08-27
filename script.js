@@ -21,7 +21,7 @@ card.addEventListener('click', function(event){
 
     if (event.target.classList.contains('btn-success')&& coinAmount.innerText >= 20 ) {
     
-        console.log(card.children)
+        console.log(event.target.parent)
         convertedCoin = parseInt(coinAmount.innerText)
         coin = convertedCoin - 20
         coinAmount.innerText = coin

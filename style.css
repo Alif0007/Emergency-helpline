@@ -1,0 +1,27 @@
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width : 768px) {
+
+.logo-name{
+    display: none;
+}
+    
+.main-section{
+    flex-direction: column;
+}
+.card-grid{
+    grid-template-columns: 100%;
+    width: 100%;
+}
+
+.history-section{
+        width: 100%;
+
+}
+    
+}
+
