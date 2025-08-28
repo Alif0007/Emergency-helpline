@@ -23,6 +23,20 @@ card.addEventListener('click', function(event){
     } 
 })
 
+card.addEventListener('click', function(event){
+
+    if (event.target.classList.contains('copy-button')) {
+           
+        helplineNumber = event.target.parentNode.parentNode.children[3].innerText
+
+        navigator.clipboard.writeText(helplineNumber).then(() => {
+        alert("Copied Number " + helplineNumber);
+      });
+
+
+    
+    } 
+})
 
 card.addEventListener('click', function(event){
 
