@@ -4,6 +4,7 @@ const coinAmount =document.getElementById('coinAmount')
 const card = document.getElementById('card')
 const historyContainer = document.getElementById('history-container')
 const clearButton = document.getElementById('clear-button')
+const copyCount = document.getElementById('copy-count')
 
 const history = [];
 
@@ -33,7 +34,11 @@ card.addEventListener('click', function(event){
         alert("Copied Number " + helplineNumber);
       });
 
+      total = parseInt(copyCount.innerText)
+        total++
+        copyCount.innerText = total
 
+        console.log(copyCount)
     
     } 
 })
